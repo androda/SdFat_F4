@@ -35,9 +35,9 @@
 /** For Debug - must be one */
 #define ENABLE_ARDUINO_FEATURES 1
 /** For Debug - must be one */
-#define ENABLE_ARDUINO_SERIAL 1
+#define ENABLE_ARDUINO_SERIAL 0
 /** For Debug - must be one */
-#define ENABLE_ARDUINO_STRING 1
+#define ENABLE_ARDUINO_STRING 0
 //------------------------------------------------------------------------------
 /** Set zero to disable mod for non-blocking write. */
 #define ENABLE_TEENSY_SDIO_MOD 1

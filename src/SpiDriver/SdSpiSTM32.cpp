@@ -56,7 +56,8 @@ uint8_t SdSpiArduinoDriver::receive() {
 //------------------------------------------------------------------------------
 uint8_t SdSpiArduinoDriver::receive(uint8_t* buf, size_t count) {
 #if USE_STM32_DMA
-  return m_spi->dmaTransfer(nullptr, buf, count);
+  m_spi->dmaTransfer(nullptr, buf, count);
+  return 0;
 #else  // USE_STM32_DMA
   m_spi->read(buf, count);
   return 0;
